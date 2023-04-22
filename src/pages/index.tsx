@@ -36,13 +36,13 @@ export default function Home() {
         onClick={handleButton}
         className="flex justify-center items-center bg-slate-400"
       >
-        <div className="absolute flex justify-around top-20 left-0 h-full w-full md:mt-20 z-[100]">
+        <div className="absolute flex justify-around top-[15%] left-[-15%] h-full w-full z-[100]">
           <Image
             className="animate-ketupat-left md:hidden"
             src={Ketupat}
             alt="ketupat"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
           <Image
             className="animate-ketupat-left hidden md:flex"
@@ -64,13 +64,8 @@ export default function Home() {
             width: "100%",
             height: "100vh",
           }}
-          className="bg-hero h-[100%] min-w-[100vw] bg-[length:100%_100%] flex justify-center relative"
+          className="bg-hero min-h-[100%] min-w-[100vw] bg-[length:110%_100%] md:bg-contain flex justify-center relative"
         >
-          {/* <Image
-            src={Hero}
-            alt=""
-
-          /> */}
           <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
