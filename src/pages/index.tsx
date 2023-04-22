@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <>
       <title>{meta.title}</title>
       <section
         onClick={handleButton}
@@ -97,6 +97,6 @@ export default function Home() {
           allow="autoplay"
         />
       </section>
-    </main>
+    </>
   );
 }
