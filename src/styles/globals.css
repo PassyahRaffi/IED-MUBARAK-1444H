@@ -13,6 +13,9 @@
 
 html,
 body {
+  display:flex;
+  justify-content: center;
   max-width: 100%;
+  /* padding: 0px 80px; */
   overflow: hidden;
 }

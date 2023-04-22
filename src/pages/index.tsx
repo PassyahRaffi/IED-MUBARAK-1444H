@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Ketupat from "../../public/img/ketupat.svg";
+import Hero from "../../public/img/family.JPG";
 import Script from "next/script";
 
 export default function Home() {
@@ -29,13 +30,13 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <main>
       <title>{meta.title}</title>
       <section
         onClick={handleButton}
-        className="flex justify-center items-center min-h-screen bg-slate-400"
+        className="flex justify-center items-center bg-slate-400"
       >
-        <div className="absolute flex justify-between top-20 left-0 h-full w-full md:mt-20 z-[100]">
+        <div className="absolute flex justify-around top-20 left-0 h-full w-full md:mt-20 z-[100]">
           <Image
             className="animate-ketupat-left md:hidden"
             src={Ketupat}
@@ -58,7 +59,18 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="bg-hero min-h-screen min-w-[100vw] bg-cover flex justify-center relative">
+        <div
+          style={{
+            width: "100%",
+            height: "100vh",
+          }}
+          className="bg-hero h-[100%] min-w-[100vw] object-custom bg-[length:100%_100%] flex justify-center relative"
+        >
+          {/* <Image
+            src={Hero}
+            alt=""
+
+          /> */}
           <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
@@ -80,6 +92,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
