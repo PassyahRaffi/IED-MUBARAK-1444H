@@ -58,7 +58,7 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="bg-hero min-h-screen min-w-[600px] w-screen bg-cover flex justify-center relative">
+        <div className="bg-hero min-h-screen min-w-[180vw] md:min-w-[100%] bg-cover flex justify-center relative">
           <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
