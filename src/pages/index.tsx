@@ -37,7 +37,7 @@ export default function Home() {
       >
         <div className="absolute flex justify-between top-20 left-0 h-full w-full md:mt-20 z-[100]">
           <Image
-            className="animate-ketupat-left"
+            className="animate-ketupat-left md:hidden"
             src={Ketupat}
             alt="ketupat"
             width={200}
