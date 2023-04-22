@@ -64,7 +64,7 @@ export default function Home() {
             width: "100%",
             height: "100vh",
           }}
-          className="bg-hero min-h-[100%] min-w-[100vw] bg-[length:110%_100%] md:bg-contain flex justify-center relative"
+          className="bg-hero min-h-[100%] min-w-[100vw] bg-[length:130%_100%] md:bg-contain flex justify-center relative"
         >
           <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
