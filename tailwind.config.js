@@ -13,11 +13,6 @@ module.exports = {
         ketupat: "url('~/public/img/ketupat.svg')",
       },
       keyframes: {
-        spin: {
-          to: {
-            transform: "rotate(-360deg)",
-          },
-        },
         ketupatLeft: {
           "0%,100%": {
             transform: "rotate(-2deg)",
