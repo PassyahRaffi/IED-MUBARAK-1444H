@@ -44,7 +44,7 @@ export default function Home() {
             height={200}
           />
           <Image
-            className="animate-ketupat-left hidden lg:flex"
+            className="animate-ketupat-left hidden md:flex"
             src={Ketupat}
             alt="ketupat"
             width={300}
@@ -58,7 +58,7 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="bg-hero min-h-screen min-w-[100vw] md:min-w-[100%] bg-cover flex justify-center relative">
+        <div className="bg-hero min-h-screen min-w-[100vw] bg-cover flex justify-center relative">
           <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
