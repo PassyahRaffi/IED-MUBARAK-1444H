@@ -9,11 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('~/public/img/hero.JPG')",
+        hero: "url('~/public/img/family.JPG')",
         ketupat: "url('~/public/img/ketupat.svg')",
-      },
-      objectPosition: {
-        'custom': 'left top',
       },
       keyframes: {
         spin: {

@@ -64,7 +64,7 @@ export default function Home() {
             width: "100%",
             height: "100vh",
           }}
-          className="bg-hero h-[100%] min-w-[100vw] object-custom bg-[length:100%_100%] flex justify-center relative"
+          className="bg-hero h-[100%] min-w-[100vw] bg-[length:100%_100%] flex justify-center relative"
         >
           {/* <Image
             src={Hero}
