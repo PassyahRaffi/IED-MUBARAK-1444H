@@ -88,14 +88,14 @@ export default function Home() {
           </div>
         </div>
 
-          <iframe
-            id="music"
-            width="560"
-            height="315"
-            src={srcLink}
-            className="hidden"
-            allow="autoplay"
-          />
+        <iframe
+          id="music"
+          width="560"
+          height="315"
+          src={srcLink}
+          className="hidden"
+          allow="autoplay"
+        />
       </section>
     </main>
   );
