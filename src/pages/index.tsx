@@ -36,7 +36,7 @@ export default function Home() {
         onClick={handleButton}
         className="flex justify-center items-center bg-slate-400"
       >
-        <div className="absolute flex justify-around top-[15%] left-[-15%] h-full w-full z-[100]">
+        <div className="absolute flex justify-around md:top-[15%] left-[-15%] md:left-0 h-full w-full z-[100]">
           <Image
             className="animate-ketupat-left md:hidden"
             src={Ketupat}
@@ -59,14 +59,13 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div
-          style={{
-            width: "100%",
-            height: "100vh",
-          }}
-          className="bg-hero min-h-[100%] min-w-[100vw] bg-[length:130%_100%] md:bg-contain flex justify-center relative"
-        >
-          <div className="text-center">
+        <div>
+          <Image
+            className="w-full min-h-screen h-full flex md:hidden"
+            src={Hero}
+            alt="hero"
+          />
+          <div className="absolute flex flex-col md:hidden top-[10%] left-[10%] text-center z-[100]">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
             </h1>
@@ -74,18 +73,31 @@ export default function Home() {
               minal aidin wal faidzin, <br />
               sorry to be born and inner heart
             </h1>
-            <span>
-              <iframe
-                id="music"
-                width="560"
-                height="315"
-                src={srcLink}
-                className="hidden"
-                allow="autoplay"
-              />
-            </span>
           </div>
         </div>
+
+        <div className="bg-hero min-h-screen min-w-[100vw] w-screen bg-cover hidden md:flex justify-center relative">
+          <div className="text-center z-[100]">
+            <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
+              Ied Mubarak 1444 H
+            </h1>
+            <h1 className="italic font-bold md:text-xl mt-2">
+              minal aidin wal faidzin, <br />
+              sorry to be born and inner heart
+            </h1>
+          </div>
+        </div>
+
+        <span>
+          <iframe
+            id="music"
+            width="560"
+            height="315"
+            src={srcLink}
+            className="hidden"
+            allow="autoplay"
+          />
+        </span>
       </section>
     </main>
   );
