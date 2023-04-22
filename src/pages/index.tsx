@@ -88,7 +88,6 @@ export default function Home() {
           </div>
         </div>
 
-        <span>
           <iframe
             id="music"
             width="560"
@@ -97,7 +96,6 @@ export default function Home() {
             className="hidden"
             allow="autoplay"
           />
-        </span>
       </section>
     </main>
   );
