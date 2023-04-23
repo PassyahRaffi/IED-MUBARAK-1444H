@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Ketupat from "../../public/img/ketupat.svg";
-import Hero from "../../public/img/family.JPG";
 import Script from "next/script";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
   // console.log(button);
 
   let srcLink = `https://www.youtube.com/embed/7JQOsVptfDk?&autoplay=1&mute=
-    ${button === true ? "0" : "1"}
+    ${button == true ? "0" : "1"}
     &loop=1&playlist=7JQOsVptfDk`;
 
   const handleButton = () => {
@@ -36,9 +35,9 @@ export default function Home() {
         onClick={handleButton}
         className="flex justify-center items-center min-h-screen bg-slate-400"
       >
-        <div className="absolute flex justify-between top-20 left-0 h-full w-full md:mt-20 z-[100]">
+        <div className="absolute flex justify-between top-[5%] md:top-20 left-[20%] md:left-0 h-full w-full md:mt-20 z-[100]">
           <Image
-            className="animate-ketupat-left absolute flex md:hidden top-[23%] right-[-5%] z-[100]"
+            className="animate-ketupat-left md:hidden"
             src={Ketupat}
             alt="ketupat"
             width={150}
@@ -59,15 +58,8 @@ export default function Home() {
             height={300}
           />
         </div>
-        <div className="min-h-screen min-w-[100vw] w-screen flex justify-center relative">
-          <Image
-            className="absolute z-0 w-screen min-h-screen object-cover"
-            src={Hero}
-            alt="ketupat"
-            // width={300}
-            // height={300}
-          />
-          <div className="text-center z-[100]">
+        <div className="bg-hero min-h-screen min-w-[600px] w-screen bg-cover object-cover flex justify-center relative">
+          <div className="text-center">
             <h1 className="italic font-bold text-3xl md:text-5xl mt-[40%]">
               Ied Mubarak 1444 H
             </h1>
